@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NotAkos | Websites</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="website icon" type="png" href="logo.png">
+        <link rel="canonical" href="https://notakos.hu">
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: black;
+                color: white;
+                font-family: Arial, sans-serif;
+                text-align: center;
+            }
+            .container {
+                max-width: 600px;
+            }
+            h1 {
+                font-size: 3em;
+                margin-bottom: 0.5em;
+            }
+            h3 {
+                font-size: 1.5em;
+                margin-bottom: 1.5em;
+            }
+            .button-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+            button {
+                padding: 15px 30px;
+                font-size: 1em;
+                color: white;
+                background: green;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background 0.3s ease, transform 0.3s ease;
+            }
+            button:hover {
+                background: rgb(0, 80, 0);
+                transform: scale(1.05);
+            }
+
+            @media screen and (max-width: 576px) {
+                button {
+                    padding: 7px 15px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Ez biztos?</h1>
+            <h3>Válaszd ki, hova szeretnél menni!</h3>
+            <div class="button-container">
+                <button onclick='OpenWebsite("https://notakosbutakos.webnode.hu/")'>Régi weboldal</button>
+                <button onclick='OpenWebsite("https://notakos.hu/")'>Új weboldal</button>
+            </div>
+        </div>
+    </body>
+    <script>
+        function OpenWebsite(url) {
+            location.href=url
+        }
+    </script>
+</html>
